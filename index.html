@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header-sec">
+
+        <div class="header-content">
+
+            <div>
+                <span class="material-symbols-outlined" aria-label="Toggle Sidebar"
+                    onclick="toggleLeftBar()">drag_handle</span>
+            </div>
+            <div>
+                <img src="assets/logo.png" alt="Logo">
+            </div>
+            <div>
+                <span class="material-symbols-outlined" onclick="toggleMenu()">menu</span>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Navigation Sidebar -->
+    <!-- Navigation Sidebar -->
+<div class="left-bar-sec">
+
+    <div class="lef-bar-close">
+        <span class="material-symbols-outlined close-icon" onclick="closeLeftBar()">close</span>
+    </div>
+
+    <div class="content-leftbar">
+
+        <div class="quote-side">
+
+            <h1 class="head-ing">DotPic infotect</h1>
+            <p>Incepted in the year 2013, DotPic infotech(P) Ltd. Is widely known amongst the recognized service provider of highest quality Photo Editing Services, Manipulation Services, etc. ​</p>
+        
+        </div>
+
+        <div class="latest-photos">
+            <h3 class="head-ing">Latest Photos</h3>
+            <div class="photo-gallery">
+                <a href=""><img src="assets/4.JPG" alt="Photo 1"></a>
+                <a href=""><img src="assets/4.JPG" alt="Photo 2"></a>
+                <a href=""><img src="assets/4.JPG" alt="Photo 3"></a>
+                <a href=""><img src="assets/4.JPG" alt="Photo 4"></a>
+                <a href=""><img src="assets/4.JPG" alt="Photo 5"></a>
+                <a href=""><img src="assets/4.JPG" alt="Photo 6"></a>
+            </div>
+        </div>
+        
+        <!-- Divider -->
+        <hr class="divider">
+        
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h3 class="head-ing">Contact Us</h3>
+            <p>
+                <span>Address:</span> 123 Main Street, City, Country <br>
+                <span class="ph-le">Phone:</span> (+91) 7305137521, <br>
+                <p class="phone-sec">(+91) 7305137521</p>
+                <span class="em-side">Email:</span> <a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a>
+            </p>
+            <a href="" class="contact-button">Get in Touch</a>
+        </div>
+    </div>
+    <div class="cop-right-side">
+        Copyright © 2024 ------------. All Rights Reserved.
+    </div>
+</div>
+
+    <!-- Fullscreen Navigation -->
+    <div class="fullscreen-nav" id="fullscreenNav">
+        <button class="close-btn" onclick="toggleMenu()">✕</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li class="has-submenu">
+                <a href="#" onclick="toggleSubmenu(event)">Services</a>
+                <ul class="submenu">
+                    <li><a href="#web-design">Web Design</a></li>
+                    <li><a href="#seo">SEO</a></li>
+                    <li><a href="#seo">SEO</a></li>
+                    <li><a href="#seo">SEO</a></li>
+                    <li><a href="#marketing">Marketing</a></li>
+                    <li><a href="#marketing">Marketing</a></li>
+                    <li><a href="#marketing">Marketing</a></li>
+                    <li><a href="#marketing">Marketing</a></li>
+                    <li><a href="#marketing">Marketing</a></li>
+                </ul>
+            </li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <!-- Hero Section -->
+
+    <div class="hero-section">
+        <div class="swiper-container hero-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="op-ci-he" src="assets/hero.JPG" alt="Image 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/hero.JPG" alt="Image 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/hero.JPG" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    
+        <!-- Custom Arrows -->
+        <div class="swiper-button-prev">
+            <span class="material-symbols-outlined">arrow_back_ios</span>
+        </div>
+        <div class="swiper-button-next">
+            <span class="material-symbols-outlined">arrow_forward_ios</span>
+        </div>
+    
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- Typing Section -->
+        <div class="typing-section">
+            <h1 class="typing-text">
+                We are a creative agency focused on <span class="dynamic-text"></span>
+            </h1>
+            <p>The world without photography will be meaningless</p>
+        </div>
+    </div>
+    
+    
+
+    <section class="we-are fade-in">
+        <div class="we-are-content">
+            <div class="we-are-first fade-in">
+                <img src="assets/4.JPG" alt="Team Image">
+            </div>
+            <div class="we-are-second">
+                <h1 class="head-ing">We Are DotPic</h1>
+                <p style="line-height: 30px !important;">Incepted in the year 2013, DotPic Infotech (P) Ltd. is widely
+                    known amongst the recognized service
+                    provider of highest quality Photo Editing Services, Manipulation Services, etc.</p>
+                <section class="services">
+                    <div class="weare-in">
+                        <div class="service-item">
+                            <h3>HAPPY CLIENTS <span class="styled-percentage">100%</span></h3>
+                            <div class="border"></div>
+                            <p>To make the most of the collective genius of all the people involved.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>BRANDING <span class="styled-percentage">100%</span></h3>
+                            <div class="border"></div>
+                            <p>It’s not just about money, we prioritize the success in all we do.</p>
+                        </div>
+                    </div>
+                    <div class="weare-in">
+                        <div class="service-item">
+                            <h3>ESTATE PHOTOGRAPHY <span class="styled-percentage">100%</span></h3>
+                            <div class="border"></div>
+                            <p>We believe in the value of metrics of results, sales, impact and culture.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>GRAPHIC DESIGN <span class="styled-percentage">100%</span></h3>
+                            <div class="border"></div>
+                            <p>We practice what we preach. We listen to all voices.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+
+    <section class="we-are fade-in">
+        <div class="we-are-content">
+            <!-- Left Content Slider -->
+            <div class="left-content">
+                <div class="swiper-container content-swiper">
+                    <h1 class="head-ing">About Us</h1>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="wrp-ad">
+                                Dotpic is the leading online hub for all things digital. Our global team of professional editing experts is ready to transform your photos into eye-catching professional images.
+                            </p>
+                            <div class="abt-in">
+                                <div class="in-abt-co">
+                                    <img src="assets/icon-png/startup.png">
+                                    <span>FAST</span>
+                                    <p>24 hour turn around (48 hours for virtual staging)</p>
+                                </div>
+                                <div class="in-abt-co">
+                                    <img src="assets/icon-png/handshake.png">
+                                    <span>NO HIDDEN FEES</span>
+                                    <p>Pay only for what you use with no subscriptions – just pay one fixed low rate per image</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="wrp-ad">
+                                Simply upload your photos, and let our professionals take care of the rest.
+                                We offer a wide range of services, including photo editing, virtual staging,
+                                floor plan redraws, renders, and virtual renovations.
+                            </p>
+                            <div class="abt-in">
+                                <div class="in-abt-co">
+                                    <img src="assets/icon-png/thumbs-up.png">
+                                    <span>UNLIMITED CHANGES</span>
+                                    <p>100% satisfaction with our unlimited change guarantee</p>
+                                </div>
+                                <div class="in-abt-co">
+                                    <img src="assets/icon-png/medal.png">
+                                    <span>REAL SERVICE</span>
+                                    <p>Our customer service experts are available 24/7 on live chat, phone or email</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="wrp-ad">
+                                Are you in the residential or commercial real estate industry and need high-quality images to showcase your listings? Or are you in the retail industry and want clean and professional images to display your products? Dotpic will work with your images to get you the best results to meet your needs but stand out from your competitors.
+                            </p>
+                            <div class="abt-in">
+                                <div class="in-abt-co">
+                                    <span class="material-symbols-outlined cop-right-as">
+                                        copyright
+                                        </span>
+                                    <span>NO COPYRIGHT</span>
+                                    <p>We edit your images and return them to you – no ownership took</p>
+                                </div>
+                                <div class="in-abt-co">
+                                    <img src="assets/icon-png/star1.png">
+                                    <span>FREE TRIAL PROJECT</span>
+                                    <p>Want to know how we are working? We do sample project for your specific service for free</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Unique Pagination -->
+                    <div class="content-swiper-pagination"></div>
+                    <!-- Unique Navigation -->
+                    <div class="content-swiper-button-next"></div>
+                    <div class="content-swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="we-are-first fade-in">
+                <img src="assets/4.JPG" alt="Professional Woman at Laptop">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- How do we work -->
+
+    <section class="we-are">
+        <div class="how-we-content">
+            <h1 class="head-ing how-we-work-h">How We Do Work</h1>
+            <div class="content-work">
+                <div class="inside-work-do">
+                    <img src="assets/icon-png/photo.png">
+                    <span>you upload</span>
+                    <p>Upload your photos from your mobile, tablet, or desktop computer through Dropbox or Wetransfer.
+                    </p>
+                </div>
+                <div class="inside-work-do">
+                    <img src="assets/icon-png/photo-editing.png">
+                    <span>we edit</span>
+                    <p>Our team of photo editing experts will enhance your images within 24 hours. 100% satisfaction guaranteed.
+                    </p>
+                </div>
+                <div class="inside-work-do">
+                    <img src="assets/icon-png/high-quality.png">
+                    <span>quality assurance</span>
+                    <p>We have a dedicated quality control team to ensure editing is performed to the highest of standards.
+                    </p>
+                </div>
+                <div class="inside-work-do">
+                    <img src="assets/icon-png/thumbs-up.png">
+                    <span>Ready!</span>
+                    <p>Download the professionally edited images from the email link sent by our team as soon as they are complete.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Image Slide -->
+
+    <div class="image-slider-section">
+        <div class="swiper image-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide image-container"><img src="assets/3.JPG" alt="Image 1"><a href="#"
+                        class="see-more">SEE MORE</a></div>
+                <div class="swiper-slide image-container"><img src="assets/3.JPG" alt="Image 1"><a href="#"
+                        class="see-more">SEE MORE</a></div>
+                <div class="swiper-slide image-container"><img src="assets/3.JPG" alt="Image 1"><a href="#"
+                        class="see-more">SEE MORE</a></div>
+                <div class="swiper-slide image-container"><img src="assets/3.JPG" alt="Image 1"><a href="#"
+                        class="see-more">SEE MORE</a></div>
+            </div>
+            <!-- Unique Navigation Buttons -->
+            <div class="image-swiper-button-next">→</div>
+            <div class="image-swiper-button-prev">←</div>
+        </div>
+    </div>
+
+
+    <!-- Arrow Up/Down Button -->
+    <div id="arrow-up-btn" class="arrow-up">
+        <span class="material-symbols-outlined arrow-up-h">arrow_drop_up</span>
+    </div>
+
+    <!-- Social Icons -->
+    <div id="social-icons" class="social-icons hidden">
+        <a href="https://instagram.com" target="_blank" class="icon instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/7305137521?text=Recently%20I%20saw%20your%20website%20about%20your%20service.%20Let%20me%20know%20more%20about%20your%20services."
+            target="_blank" class="icon whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+
+
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer-container">
+            <!-- DotPic Infotech Section -->
+            <div class="footer-column">
+                <h3 class="foot-fis">DotPic Infotech</h3>
+                <p>
+                    Incepted in the year 2013, DotPic Infotech(P) Ltd. is widely known
+                    amongst the recognized service providers of the highest quality
+                    Photo Editing Services, Manipulation Services, etc.
+                </p>
+            </div>
+            <div class="footer-columnn">
+                <h3 class="head-ing foot-hed">Latest Photos</h3>
+                <div class="photo-galleryy">
+                    <img src="assets/4.JPG" alt="Photo 1">
+                    <img src="assets/4.JPG" alt="Photo 2">
+                    <img src="assets/4.JPG" alt="Photo 3">
+                    <img src="assets/4.JPG" alt="Photo 4">
+                </div>
+            </div>
+            <div class="footer-columnnn">
+                <h3 class="head-ing foot-hed">Contacts</h3>
+                <div class="foot-num">
+                    <div>
+                        <span>Phone: </span>7305137521
+                        
+                    </div>
+                    <div class="num-foo">7305137521</div>
+                    <div class="num-foo">7305137521</div>
+                </div>
+                <div class="nu-foot-m">
+                    <span>Email:</span>kvetri137@gmail.com
+                    
+                </div>
+                <p class="cop-right">&copy; 2020 DotPic Infotech. All Rights Reserved.</p>
+            </div>
+            <div class="foot-fit">
+            
+                <div class="footer-colmn">
+                    <h3 class="head-ing foot-hed">Latest Photos</h3>
+                    <div class="photo-galleryy">
+                        <img src="assets/4.JPG" alt="Photo 1">
+                        <img src="assets/4.JPG" alt="Photo 2">
+                        <img src="assets/4.JPG" alt="Photo 3">
+                        <img src="assets/4.JPG" alt="Photo 4">
+                    </div>
+                </div>
+
+                <div class="footer-colmnn">
+                    <h3 class="head-ing foot-hed">Contacts</h3>
+                    <div class="foot-num">
+                        <div>
+                            <span>Phone: </span>
+                            7305137521
+                        </div>
+                        <div class="num-foo">7305137521</div>
+                        <div class="num-foo">7305137521</div>
+                    </div>
+                    <div class="foot-num nu-foot-m">
+                        <span>Email:</span>
+                        kvetri137@gmail.com
+                    </div>
+                    <p class="cop-right">&copy; 2020 DotPic Infotech. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/swiper@8.4.7/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
