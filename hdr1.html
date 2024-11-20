@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Comparison Slider</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="ourserices.css">
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="index.css"> <!-- Update this with the actual CSS path -->
+
+    <!-- Plugin JS -->
+    <script src="jquery.anyimagecomparisonslider.min.js"></script> <!-- Update this with the actual JS path -->
+</head>
+
+<body>
+
+
+    <header class="header-sec">
+
+        <div class="header-content">
+
+            <div>
+                <span class="material-symbols-outlined" aria-label="Toggle Sidebar"
+                    onclick="toggleLeftBar()">drag_handle</span>
+            </div>
+            <div>
+                <img src="assets/logo.png" alt="Logo">
+            </div>
+            <div>
+                <span class="material-symbols-outlined" onclick="toggleMenu()">menu</span>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Navigation Sidebar -->
+    <!-- Navigation Sidebar -->
+    <div class="left-bar-sec">
+
+        <div class="lef-bar-close">
+            <span class="material-symbols-outlined close-icon" onclick="closeLeftBar()">close</span>
+        </div>
+
+        <div class="content-leftbar">
+
+            <div class="quote-side">
+
+                <h1 class="head-ing">DotPic infotect</h1>
+                <p>Incepted in the year 2013, DotPic infotech(P) Ltd. Is widely known amongst the recognized service
+                    provider of highest quality Photo Editing Services, Manipulation Services, etc. ​</p>
+
+            </div>
+
+            <div class="latest-photos">
+                <h3 class="head-ing">Latest Photos</h3>
+                <div class="photo-gallery">
+                    <a href=""><img src="assets/4.JPG" alt="Photo 1"></a>
+                    <a href=""><img src="assets/4.JPG" alt="Photo 2"></a>
+                    <a href=""><img src="assets/4.JPG" alt="Photo 3"></a>
+                    <a href=""><img src="assets/4.JPG" alt="Photo 4"></a>
+                    <a href=""><img src="assets/4.JPG" alt="Photo 5"></a>
+                    <a href=""><img src="assets/4.JPG" alt="Photo 6"></a>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <hr class="divider">
+
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h3 class="head-ing">Contact Us</h3>
+                <p>
+                    <span>Address:</span> 123 Main Street, City, Country <br>
+                    <span class="ph-le">Phone:</span> (+91) 7305137521, <br>
+                <p class="phone-sec">(+91) 7305137521</p>
+                <span class="em-side">Email:</span> <a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a>
+                </p>
+                <a href="" class="contact-button">Get in Touch</a>
+            </div>
+        </div>
+        <div class="cop-right-side">
+            Copyright © 2024 ------------. All Rights Reserved.
+        </div>
+    </div>
+
+    <!-- Fullscreen Navigation -->
+    <div class="fullscreen-nav" id="fullscreenNav">
+        <button class="close-btn" onclick="toggleMenu()">✕</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li class="has-submenu">
+                <a href="#" onclick="toggleSubmenu(event)">Services</a>
+                <ul class="submenu">
+                    <li><a href="#web-design">Web Design</a></li>
+                    <li><a href="hdr.html">HDR</a></li>
+                    <li><a href="hdr1.html">HDR!</a></li>
+                </ul>
+            </li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="sec-hdr">
+        <h1 class="head-ing">HDR</h1>
+
+        <div class="main-twoimg">
+            <div class="first-img">
+                <img src="assets/HDR/IMG_0153.jpg">
+                <div class="inside-ocn">Before</div>
+            </div>
+            <div class="first-img">
+                <img src="assets/HDR/IMG_0153-1.jpg">
+                <div class="inside-ocn ok-qs">
+                    <p>HDR $32</p>
+                    <p>After</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Some Contents -->
+
+    <section class="explain-hdr">
+        <div class="main-hdr-s">
+
+            <div class="in-box1">
+                <p>A style of photography that is growing rapidly in popularity is HDR Photography.</p>
+                <h3>High Dynamic Range:</h3>
+                <div class="in-asow">
+                To be defined, HDR (High Dynamic Range) photography is photography that captures a wider and more natural range of colors and intensities.<br>
+                This allows for photos to appear as the human eye actually sees them rather than only allowing a part of a photograph’s coloring to appear true.<br>
+                Blend images of varied exposures, different focus point and diverse shades of brightness and contrast to fashion a natural looking image of your real estate property with superior dynamic range.
+                    </div>
+            </div>
+
+
+            <div class="main-cl">
+                <div class="ins-hdr">
+                    <h3>Importance of HDR Blending:</h3>
+                    <p>
+                        High Dynamic Range Blending repairs the flaws which frequently occur when you capture the
+                        photographs of your property and buildings for sale in different lighting and temperature
+                        conditions
+                        or shoot at different exposure values. Blending Images allows you to generate high quality, high
+                        dynamic range images by blending a sequence of images with varying quality, brightness, and
+                        contrast.
+                    </p>
+                    <p>
+                        HDR Image Blending also lends a depth of field to images shot with the inconsistent focus
+                        points. As
+                        in the case of star trail or night photography, you can overcome the limitations of a single
+                        frame
+                        and blend a series of images to create long exposure.
+                    </p>
+                </div>
+                <div class="ins-hdr">
+                    <h3>Our Importance:</h3>
+                    <p>
+                        In selling real estate, your images acquire paramount importance.
+                        It is for this reason you often need to take a sequence of images of your property shot with
+                        different exposures, or under or uneven lighting conditions.
+                    </p>
+                    <p>
+                        With the help of blending images professionals Like us, you can manipulate your realty images
+                        taken
+                        of the same sight into a natural looking dynamic photo that gives you more depth and clarity.
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-box3">
+                <div class="ins-box3">
+                    <ul>
+                        <li>White balance adjustments</li>
+                        <li>Noise or grain reduction</li>
+                        <li>Retaining window details</li>
+                        <li>Brightness and contrast modification</li>
+                    </ul>
+                </div>
+                <div class="ins-box3">
+                    <ul>
+                        <li>Image resizing</li>
+                        <li>Perspective corrections</li>
+                        <li>Highlighting shadows</li>
+                        <li>Background replacements</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="last-con">Note: Send your trial images to our HDR Blending team and get a free test HDR Blending service from us.</div>
+        </div>
+    </section>
+
+
+
+    <!-- Initialize Plugin -->
+    <script src="main.js"></script>
+</body>
+
+</html>

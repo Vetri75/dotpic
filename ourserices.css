@@ -1,0 +1,262 @@
+/* General Styling */
+.header-sec {
+    background: #f0f0f0 !important;
+}
+
+body {
+    background-color: white !important;
+}
+
+.main-yop {
+    padding: 100px 60px 60px 60px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: auto; /* Adjust height dynamically */
+}
+
+.main-yop h1 {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Slider Container */
+.main-view {
+    width: 100%; /* Full width */
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Center horizontally */
+    position: relative;
+    /* padding-top: 56.25%; 16:9 Aspect Ratio (Height/Width = 9/16 = 0.5625 or 56.25%) */
+}
+
+.comparison-slider-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-rgt, .image-lft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover the container */
+}
+
+.dragger {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: ew-resize;
+    display: none; /* Hide by default */
+}
+
+.comparison-slider-container:hover .dragger {
+    display: block; /* Show on hover */
+}
+
+/* UI (Buttons and Labels) */
+.ui {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.button-rgt, .button-lft {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    margin: 0;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+}
+
+.button-rgt {
+    right: 0;
+}
+
+.button-lft {
+    left: 0;
+}
+
+/* Bottom Text */
+.bot-um {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    color: #fff;
+}
+
+
+/* Some Contents */
+.explain-hdr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 60px 60px 60px;
+    font-size: 19px;
+    width: 100%; /* Ensure full width */
+}
+.explain-hdr p{
+    text-align: justify;
+}
+
+.main-hdr-s {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px; /* Ensure space between items */
+}
+
+.in-box1,
+.main-cl,
+.main-box3 {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    width: 100%; /* Full width */
+}
+
+.in-box1 p,
+.main-cl p {
+    margin-bottom: 20px;
+    line-height: 1.875em;
+}
+
+/* Optional: Add spacing between paragraphs within in-box1 */
+.in-box1 p + p {
+    margin-top: 10px;
+}
+
+/* Additional Flex settings to ensure even distribution of content */
+.main-cl,
+.main-box3 {
+    gap: 20px; /* Gap between flex items */
+    width: 100%; /* Ensure these sections take full width */
+}
+.main-box3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: 0 auto;
+}
+.main-cl h3{
+    margin-bottom: 20px;
+}
+.in-asow {
+    margin-top: 20px;
+    line-height: 1.875em;
+    text-align: justify;
+    font-size: 19px;
+    margin-bottom: 35px;
+}
+
+/* Ensure that last content section (last-con) has top margin */
+.last-con {
+    margin-top: 35px;
+    font-weight: bold;
+}
+
+.main-box3 {
+    margin-top: 35px;
+}
+
+
+
+/* Second demo hdr page */
+.sec-hdr {
+    width: 100%;
+    padding: 100px 60px 60px 30px;
+}
+
+.main-twoimg {
+    display: flex;
+    width: 100%; /* Full width */
+    max-width: 902px; /* Maximum width */
+    margin: 0 auto; /* Center horizontally */
+    position: relative;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.first-img {
+    position: relative; /* Make this container relative to position the text inside it */
+}
+
+.first-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; /* Ensures image takes full height of its container */
+}
+
+.inside-ocn {
+    position: absolute;
+    bottom: 0; /* Position it at the bottom */
+    left: 0; /* Stretch from left to right */
+    width: 100%; /* Make the background span the entire width */
+    background-color: rgba(0, 0, 0, 0.6); /* Optional: background color */
+    color: white; /* Text color */
+    text-align: start; /* Center the text */
+    padding: 5px; /* Padding around the text */
+    font-size: 16px; /* Text size */
+}
+.ok-qs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-cl,
+    .main-box3 {
+        gap: 20px;
+        width: 100%;
+    }
+    .main-box3{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-yop {
+        padding: 100px 10px 30px 10px; /* Adjust padding for very small screens */
+    }
+    .explain-hdr {
+        padding: 30px 10px;
+    }
+    .last-con{
+        font-size: 10px;
+        font-weight: 900;
+    }
+    .sec-hdr{
+        padding: 100px 10px 30px 10px;
+    }
+}
