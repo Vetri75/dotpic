@@ -111,22 +111,31 @@
         </ul>
     </div>
 
-    <section class="sec-hdr">
-        <h1 class="head-ing">HDR</h1>
-
-        <div class="main-twoimg">
-            <div class="first-img">
-                <img src="assets/HDR/IMG_0153.jpg">
-                <div class="inside-ocn">Before</div>
-            </div>
-            <div class="first-img">
-                <img src="assets/HDR/IMG_0153-1.jpg">
-                <div class="inside-ocn ok-qs">
-                    <p>HDR $32</p>
-                    <p>After</p>
+    <section class="main-yop">
+        <h1 class="head-ing ">HDR</h1>
+        <div class="main-vieww ">
+            <!-- Image Comparison Slider -->
+            <div id="example" class="aics-autostart" data-orientation="horizontal" data-width="100%"
+                data-background-color="none" data-dividing-line="solid 1px rgba(255, 255, 255, .5)"
+                data-cursor="ew-resize">
+                <div class="images">
+                    <div class="image-rgt" data-src="assets/HDR/IMG_0153-1.jpg"></div>
+                    <!-- Update with 'before' image path -->
+                    <div class="image-lft" data-src="assets/HDR/IMG_0153.jpg"></div>
+                    <!-- Update with 'after' image path -->
+                </div>
+                <div class="ui">
+                    <!-- Optional labels -->
+                    <a class="button-rgt" alt="Before">After</a>
+                    <a class="button-lft" alt="After">Before</a>
+                    <p class="bot-um">HDR $32</p>
+                    <!-- Optional drag handle -->
+                    <!-- <img class="dragger" src="dragger-h.png" alt="Handle" width="30" height="30"> -->
+                    <!-- Update with dragger image path -->
                 </div>
             </div>
         </div>
+        <p class="int-asw"><span>Int : </span>For a better preview, click the Before or After button.</p>
     </section>
 
     <!-- Some Contents -->
@@ -296,6 +305,23 @@
     <!-- Initialize Plugin -->
     <script src="main.js"></script>
     <script src="ourservices.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').anyImageComparisonSlider({
+                orientation: 'horizontal',            // Slider orientation
+                initialPosition: 0.5,                 // Start position (50%)
+                width: '100%',                        // Slider width
+                backgroundColor: 'none',              // Background color
+                interactive: true,                    // Enable interaction
+                autoAnimation: true,                  // Enable automatic animation
+                autoAnimationSpeed: 8,                // Speed of animation (adjust as needed)
+                autoAnimationPause: 1,                // Pause between animations (in seconds)
+                autoAnimationEasing: 'inOutCubic',    // Easing function for smooth transition
+                dividingLine: 'solid 2px #000',       // Divider line style
+                cursor: 'ew-resize',                  // Cursor style
+            });
+        });
+    </script>
 </body>
 
 </html>

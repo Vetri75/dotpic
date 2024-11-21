@@ -756,7 +756,7 @@ body {
 
 .image-swiper .swiper-slide img {
     width: 100%;
-    height: auto;
+    height: 600px;
     object-fit: cover;
 }
 /* Hover effect: Move image up slightly */
