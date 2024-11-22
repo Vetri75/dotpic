@@ -301,12 +301,11 @@ body {
 }
 .nav-links a.active {
     color: #b57f3a; /* Highlight color */
-    font-weight: bold; /* Optional for emphasis */
     border-bottom: 2px solid #b57f3a; /* Optional underline */
 }
 .has-submenu > a.submenu-active {
     color: #b57f3a !important; /* Use !important as a last resort */
-    font-weight: bold;
+    border-bottom: 2px solid #b57f3a;
 }
 
 
