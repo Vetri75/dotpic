@@ -15,6 +15,12 @@ body {
     flex-direction: column;
     min-height: auto; 
 }
+.main-faq{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 30px 10px;
+}
 
 .main-yop h1 {
     margin-bottom: 30px;
@@ -201,6 +207,44 @@ body {
     margin-top: 35px;
 }
 
+/* Twilight */
+
+.twi-wq p{
+    display: list-item;
+    margin-left : 1em;
+}
+
+
+/* Virtual Staging */
+
+.vir-in h3{
+    margin-bottom: 20px;
+}
+.vir-in {
+    display: flex;
+    gap: 30px; /* Add spacing between the columns */
+    padding: 20px; /* Optional padding around the container */
+    justify-content: space-between; /* Ensure even spacing between items */
+    box-sizing: border-box; /* Ensure padding and border are included in width/height */
+}
+
+.vir-in-f {
+    flex: 1; /* Allow items to take up equal space */
+    box-sizing: border-box; /* Include padding/border in the width */
+}
+.vir-in-f p{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* Frequently Asked Questions */
@@ -263,6 +307,7 @@ body {
 
 
 
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .main-cl,
@@ -281,6 +326,9 @@ body {
     }
     .int-asw{
         font-size: 10px;
+    }
+    .vir-in{
+        flex-direction: column;
     }
 }
 

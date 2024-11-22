@@ -108,6 +108,24 @@ arrowUpBtn.addEventListener('click', function () {
   }
 });
 
+// Active links
+
+document.addEventListener('DOMContentLoaded', () => {
+    const currentUrl = window.location.href.split(/[?#]/)[0]; // Get current URL without query or hash
+    const submenuLinks = document.querySelectorAll('.submenu a');
+    const servicesLink = document.querySelector('.has-submenu > a');
+
+    submenuLinks.forEach(link => {
+        const linkHref = link.href.split(/[?#]/)[0];
+        console.log('Current URL:', currentUrl, 'Link Href:', linkHref); // Debugging log
+        if (linkHref === currentUrl) {
+            console.log('Match found!'); // Debugging log
+            servicesLink.classList.add('submenu-active'); // Highlight "Services"
+        }
+    });
+});
+
+
 
 
 
