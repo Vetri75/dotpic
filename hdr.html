@@ -309,20 +309,51 @@
     <script src="modules/js/ourservices.js"></script>
     <script>
         $(document).ready(function () {
-            $('#example').anyImageComparisonSlider({
-                orientation: 'horizontal',            // Slider orientation
-                initialPosition: 0.5,                 // Start position (50%)
-                width: '100%',                        // Slider width
-                backgroundColor: 'none',              // Background color
-                interactive: true,                    // Enable interaction
-                autoAnimation: true,                  // Enable automatic animation
-                autoAnimationSpeed: 8,                // Speed of animation (adjust as needed)
-                autoAnimationPause: 1,                // Pause between animations (in seconds)
-                autoAnimationEasing: 'inOutCubic',    // Easing function for smooth transition
-                dividingLine: 'solid 2px #000',       // Divider line style
-                cursor: 'ew-resize',                  // Cursor style
-            });
+    function initializeSlider() {
+        $('#example').anyImageComparisonSlider({
+            orientation: 'horizontal',            // Slider orientation
+            initialPosition: 0.5,                 // Start position (50%)
+            width: '100%',                        // Slider width
+            backgroundColor: 'none',              // Background color
+            interactive: true,                    // Enable interaction
+            autoAnimation: true,                  // Enable automatic animation
+            autoAnimationSpeed: 8,                // Speed of animation (adjust as needed)
+            autoAnimationPause: 1,                // Pause between animations (in seconds)
+            autoAnimationEasing: 'inOutCubic',    // Easing function for smooth transition
+            dividingLine: 'solid 2px #000',       // Divider line style
+            cursor: 'ew-resize',                  // Cursor style
         });
+    }
+
+    // Preload images before initializing the slider
+    function preloadImages(images, callback) {
+        let loaded = 0;
+        images.forEach((src) => {
+            $('<img>').on('load', function () {
+                loaded++;
+                if (loaded === images.length) callback();
+            }).attr('src', src);
+        });
+    }
+
+    const imageSources = [
+        'assets/HDR/IMG_0153-1.jpg',
+        'assets/HDR/IMG_0153.jpg'
+    ];
+
+    preloadImages(imageSources, initializeSlider);
+
+    // Reinitialize on resize
+    let resizeTimer;
+    $(window).on('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function () {
+            $('#example').anyImageComparisonSlider('destroy'); // Destroy existing slider
+            initializeSlider(); // Reinitialize
+        }, 300);
+    });
+});
+
     </script>
 </body>
 
