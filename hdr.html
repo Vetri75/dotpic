@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="modules/css/index.css"> <!-- Update this with the actual CSS path -->
 
     <!-- Plugin JS -->
-    <script src="modules/js/jquery.anyimagecomparisonslider.min.js"></script> <!-- Update this with the actual JS path -->
+    <script src="modules/js/jquery.anyimagecomparisonslider.min.js"></script>
+    <!-- Update this with the actual JS path -->
 </head>
 
 <body>
@@ -151,10 +152,14 @@
                 <p>A style of photography that is growing rapidly in popularity is HDR Photography.</p>
                 <h3>High Dynamic Range:</h3>
                 <div class="in-asow">
-                To be defined, HDR (High Dynamic Range) photography is photography that captures a wider and more natural range of colors and intensities.<br>
-                This allows for photos to appear as the human eye actually sees them rather than only allowing a part of a photograph’s coloring to appear true.<br>
-                Blend images of varied exposures, different focus point and diverse shades of brightness and contrast to fashion a natural looking image of your real estate property with superior dynamic range.
-                    </div>
+                    To be defined, HDR (High Dynamic Range) photography is photography that captures a wider and more
+                    natural range of colors and intensities.<br>
+                    This allows for photos to appear as the human eye actually sees them rather than only allowing a
+                    part of a photograph’s coloring to appear true.<br>
+                    Blend images of varied exposures, different focus point and diverse shades of brightness and
+                    contrast to fashion a natural looking image of your real estate property with superior dynamic
+                    range.
+                </div>
             </div>
 
 
@@ -210,8 +215,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="last-con">Note: Send your trial images to our HDR Blending team and get a free test HDR Blending service from us.</div>
-        
+            <div class="last-con">Note: Send your trial images to our HDR Blending team and get a free test HDR Blending
+                service from us.</div>
+
         </div>
     </section>
 
@@ -301,6 +307,23 @@
     <!-- Initialize Plugin -->
     <script src="modules/js/main.js"></script>
     <script src="modules/js/ourservices.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').anyImageComparisonSlider({
+                orientation: 'horizontal',            // Slider orientation
+                initialPosition: 0.5,                 // Start position (50%)
+                width: '100%',                        // Slider width
+                backgroundColor: 'none',              // Background color
+                interactive: true,                    // Enable interaction
+                autoAnimation: true,                  // Enable automatic animation
+                autoAnimationSpeed: 8,                // Speed of animation (adjust as needed)
+                autoAnimationPause: 1,                // Pause between animations (in seconds)
+                autoAnimationEasing: 'inOutCubic',    // Easing function for smooth transition
+                dividingLine: 'solid 2px #000',       // Divider line style
+                cursor: 'ew-resize',                  // Cursor style
+            });
+        });
+    </script>
 </body>
 
 </html>

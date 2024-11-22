@@ -248,5 +248,22 @@
 
     <script src="modules/js/main.js"></script>
     <script src="modules/js/ourservices.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').anyImageComparisonSlider({
+                orientation: 'horizontal',            // Slider orientation
+                initialPosition: 0.5,                 // Start position (50%)
+                width: '100%',                        // Slider width
+                backgroundColor: 'none',              // Background color
+                interactive: true,                    // Enable interaction
+                autoAnimation: true,                  // Enable automatic animation
+                autoAnimationSpeed: 8,                // Speed of animation (adjust as needed)
+                autoAnimationPause: 1,                // Pause between animations (in seconds)
+                autoAnimationEasing: 'inOutCubic',    // Easing function for smooth transition
+                dividingLine: 'solid 2px #000',       // Divider line style
+                cursor: 'ew-resize',                  // Cursor style
+            });
+        });
+    </script>
 </body>
 </html>
