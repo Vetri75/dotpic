@@ -223,7 +223,6 @@ body {
 .vir-in {
     display: flex;
     gap: 30px; /* Add spacing between the columns */
-    padding: 20px; /* Optional padding around the container */
     justify-content: space-between; /* Ensure even spacing between items */
     box-sizing: border-box; /* Ensure padding and border are included in width/height */
 }
